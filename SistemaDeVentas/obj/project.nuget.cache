@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jq6ZkiOcGsDSV4f7V/xU4RaXk0BJ39uvfAZ77xdQKeTbijvWVdjQS7AoKvdhGMMkAFcw7eV7SgXK7DG8GRlAuA==",
+  "success": true,
+  "projectFilePath": "E:\\Documents\\GitHub\\Project_InvForEveSofts\\SistemaDeVentas\\SistemaDeVentas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
