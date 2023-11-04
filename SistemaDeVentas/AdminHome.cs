@@ -15,7 +15,7 @@ namespace inventario
         int id = 1;
         int rows = 0;
 
-
+        public bool IsHidden { get; private set; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -257,6 +257,7 @@ namespace inventario
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             this.Hide();
+            this.IsHidden = true;
             LoginHome Loginhome = new LoginHome();
             Loginhome.Show();
         }

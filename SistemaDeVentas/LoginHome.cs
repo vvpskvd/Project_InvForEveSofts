@@ -10,7 +10,8 @@ namespace Login
             InitializeComponent();
         }
 
-        //Boton para ingresar y validar datos de usuario y contraseña de SuperadminConfig.
+        //Boton para ingresar y validar datos de usuario.
+        //Aca valida si es Usuario o Administrador en las credenciales ya estaticas de SuperadminConfig
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text == SuperadminConfig.UsernameAdmin && txtPass.Text == SuperadminConfig.PasswordAdmin)
@@ -39,19 +40,22 @@ namespace Login
             Application.Exit();
         }
 
-        //Botones de mostrar / ocultar contraseña.
+        //Boton de Mostrar contraseña.
         private void btnVerPassword_Click(object sender, EventArgs e)
         {
             btnOcultarPassword.BringToFront();
             txtPass.PasswordChar = '\0';
         }
 
+        //Boton de Ocultar contraseña
         private void btnOcultarPassword_Click(object sender, EventArgs e)
         {
             btnVerPassword.BringToFront();
             txtPass.PasswordChar = '*';
         }
 
+        //Boton de ¿Olvidaste tu Contraseña?
+        //Aqui se inicializa en null, para que al darle click al boton se abra el formulario de ForgetPassword.cs, ademas de validacion que si esta abierto no se abra infinitamente, solo una vez.
         ForgetPassword? forgetPassword = null;
         private void forgetPass_Click(object sender, EventArgs e)
         {
@@ -65,5 +69,16 @@ namespace Login
                 forgetPassword.BringToFront();
             }
         }
+
+        private void AdminHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Si el formulario de administrador no está abierto o está oculto, cierra la aplicación
+            var formAdmin = Application.OpenForms.OfType<AdminHome>().FirstOrDefault();
+            if (formAdmin == null || formAdmin.IsHidden)
+            {
+                Application.Exit();
+            }
+        }
+
     }
 }
