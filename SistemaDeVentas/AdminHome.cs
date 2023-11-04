@@ -254,6 +254,7 @@ namespace inventario
             }
         }
 
+        //Boton de Salir para volver al formulario LoginHome y asi volver a ingresar como otro Admin o Usuario.
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             this.Hide();
