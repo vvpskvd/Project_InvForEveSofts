@@ -36,7 +36,7 @@ namespace Login
         //Boton de Cancelar accion.
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         //Botones de mostrar / ocultar contraseña.

@@ -113,9 +113,9 @@
             labelTextoLogin1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             labelTextoLogin1.Location = new Point(33, 171);
             labelTextoLogin1.Name = "labelTextoLogin1";
-            labelTextoLogin1.Size = new Size(174, 37);
+            labelTextoLogin1.Size = new Size(149, 37);
             labelTextoLogin1.TabIndex = 8;
-            labelTextoLogin1.Text = "Bienvenido/a";
+            labelTextoLogin1.Text = "Bienvenido";
             labelTextoLogin1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // labelTextoLogin2
@@ -160,7 +160,7 @@
             btnIngresar.IconChar = FontAwesome.Sharp.IconChar.None;
             btnIngresar.IconColor = Color.Black;
             btnIngresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIngresar.Location = new Point(419, 251);
+            btnIngresar.Location = new Point(422, 254);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(90, 33);
             btnIngresar.TabIndex = 12;
@@ -175,11 +175,11 @@
             btnCancelar.IconChar = FontAwesome.Sharp.IconChar.None;
             btnCancelar.IconColor = Color.Black;
             btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnCancelar.Location = new Point(530, 251);
+            btnCancelar.Location = new Point(534, 254);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(90, 33);
             btnCancelar.TabIndex = 13;
-            btnCancelar.Text = "Cancelar";
+            btnCancelar.Text = "Salir";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
@@ -210,7 +210,7 @@
             // forgetPass
             // 
             forgetPass.Cursor = Cursors.Hand;
-            forgetPass.Location = new Point(440, 310);
+            forgetPass.Location = new Point(455, 310);
             forgetPass.Name = "forgetPass";
             forgetPass.Size = new Size(154, 25);
             forgetPass.TabIndex = 16;

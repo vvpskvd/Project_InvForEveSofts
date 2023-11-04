@@ -112,6 +112,7 @@
             Controls.Add(labelForgetPassword1);
             Controls.Add(label1);
             Controls.Add(labelForgetPassword2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "ForgetPassword";

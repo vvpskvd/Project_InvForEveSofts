@@ -1,3 +1,4 @@
+using Login;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 
@@ -251,6 +252,13 @@ namespace inventario
                 int r = dvgdatos.SelectedRows[0].Index;
                 dvgdatos.Rows.RemoveAt(r);
             }
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginHome Loginhome = new LoginHome();
+            Loginhome.Show();
         }
     }
 }
