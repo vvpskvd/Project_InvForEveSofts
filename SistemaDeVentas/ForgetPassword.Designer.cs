@@ -117,7 +117,7 @@
             MaximizeBox = false;
             Name = "ForgetPassword";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "¿Olvidaste la Contraseña?";
+            Text = "Contactar al Administrador";
             ResumeLayout(false);
             PerformLayout();
         }

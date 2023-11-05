@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventas));
             datos = new GroupBox();
             txtcant = new TextBox();
             txtprecio = new TextBox();
@@ -44,14 +45,13 @@
             btneditar = new Button();
             btnguardar = new Button();
             btneliminar = new Button();
-            btnCerrarForm = new Button();
             datos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dvgdatos).BeginInit();
             SuspendLayout();
             // 
             // datos
             // 
-            datos.BackColor = SystemColors.ButtonFace;
+            datos.BackColor = Color.Silver;
             datos.BackgroundImageLayout = ImageLayout.None;
             datos.Controls.Add(txtcant);
             datos.Controls.Add(txtprecio);
@@ -62,22 +62,22 @@
             datos.FlatStyle = FlatStyle.System;
             datos.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             datos.ForeColor = SystemColors.ActiveCaptionText;
-            datos.Location = new Point(174, 12);
+            datos.Location = new Point(117, 46);
             datos.Name = "datos";
-            datos.Size = new Size(448, 338);
+            datos.Size = new Size(733, 203);
             datos.TabIndex = 2;
             datos.TabStop = false;
             datos.Tag = "";
-            datos.Text = "datos";
+            datos.Text = "Datos";
             datos.Enter += groupBox1_Enter;
             // 
             // txtcant
             // 
             txtcant.Cursor = Cursors.IBeam;
             txtcant.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcant.Location = new Point(27, 244);
+            txtcant.Location = new Point(293, 140);
             txtcant.Name = "txtcant";
-            txtcant.Size = new Size(140, 21);
+            txtcant.Size = new Size(238, 21);
             txtcant.TabIndex = 7;
             txtcant.Text = "cantidad";
             txtcant.Enter += txtcant_Enter;
@@ -89,10 +89,10 @@
             txtprecio.Cursor = Cursors.IBeam;
             txtprecio.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtprecio.ForeColor = SystemColors.InfoText;
-            txtprecio.Location = new Point(27, 181);
+            txtprecio.Location = new Point(27, 140);
             txtprecio.Name = "txtprecio";
             txtprecio.RightToLeft = RightToLeft.No;
-            txtprecio.Size = new Size(140, 21);
+            txtprecio.Size = new Size(238, 21);
             txtprecio.TabIndex = 10;
             txtprecio.Text = "precio";
             txtprecio.Enter += txtprecio_Enter;
@@ -102,7 +102,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(27, 223);
+            label2.Location = new Point(293, 120);
             label2.Name = "label2";
             label2.Size = new Size(64, 17);
             label2.TabIndex = 4;
@@ -114,7 +114,7 @@
             // 
             txtname.Cursor = Cursors.IBeam;
             txtname.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtname.Location = new Point(27, 104);
+            txtname.Location = new Point(27, 51);
             txtname.Name = "txtname";
             txtname.Size = new Size(238, 21);
             txtname.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(27, 144);
+            label4.Location = new Point(27, 120);
             label4.Name = "label4";
             label4.Size = new Size(48, 17);
             label4.TabIndex = 6;
@@ -138,7 +138,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(27, 74);
+            label3.Location = new Point(27, 31);
             label3.Name = "label3";
             label3.Size = new Size(118, 17);
             label3.TabIndex = 5;
@@ -149,11 +149,11 @@
             // 
             dvgdatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvgdatos.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
-            dvgdatos.Location = new Point(68, 373);
+            dvgdatos.Location = new Point(27, 374);
             dvgdatos.Name = "dvgdatos";
             dvgdatos.RowHeadersWidth = 51;
             dvgdatos.RowTemplate.Height = 29;
-            dvgdatos.Size = new Size(838, 244);
+            dvgdatos.Size = new Size(933, 244);
             dvgdatos.TabIndex = 17;
             dvgdatos.CellContentClick += dataGridView2_CellContentClick;
             // 
@@ -188,8 +188,9 @@
             // btnnuevo
             // 
             btnnuevo.BackColor = SystemColors.HotTrack;
+            btnnuevo.Cursor = Cursors.Hand;
             btnnuevo.ForeColor = SystemColors.ButtonHighlight;
-            btnnuevo.Location = new Point(678, 33);
+            btnnuevo.Location = new Point(117, 267);
             btnnuevo.Name = "btnnuevo";
             btnnuevo.Size = new Size(170, 60);
             btnnuevo.TabIndex = 18;
@@ -200,8 +201,9 @@
             // btneditar
             // 
             btneditar.BackColor = SystemColors.HotTrack;
+            btneditar.Cursor = Cursors.Hand;
             btneditar.ForeColor = SystemColors.ButtonHighlight;
-            btneditar.Location = new Point(678, 192);
+            btneditar.Location = new Point(490, 267);
             btneditar.Name = "btneditar";
             btneditar.Size = new Size(170, 60);
             btneditar.TabIndex = 19;
@@ -212,10 +214,11 @@
             // btnguardar
             // 
             btnguardar.BackColor = SystemColors.HotTrack;
+            btnguardar.Cursor = Cursors.Hand;
             btnguardar.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 192, 0);
             btnguardar.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 192);
             btnguardar.ForeColor = SystemColors.ButtonHighlight;
-            btnguardar.Location = new Point(678, 115);
+            btnguardar.Location = new Point(304, 267);
             btnguardar.Name = "btnguardar";
             btnguardar.Size = new Size(170, 60);
             btnguardar.TabIndex = 20;
@@ -226,8 +229,9 @@
             // btneliminar
             // 
             btneliminar.BackColor = SystemColors.HotTrack;
+            btneliminar.Cursor = Cursors.Hand;
             btneliminar.ForeColor = SystemColors.ButtonHighlight;
-            btneliminar.Location = new Point(678, 277);
+            btneliminar.Location = new Point(680, 267);
             btneliminar.Name = "btneliminar";
             btneliminar.Size = new Size(170, 60);
             btneliminar.TabIndex = 21;
@@ -235,24 +239,13 @@
             btneliminar.UseVisualStyleBackColor = false;
             btneliminar.Click += btneliminar_Click;
             // 
-            // btnCerrarForm
-            // 
-            btnCerrarForm.Location = new Point(68, 150);
-            btnCerrarForm.Name = "btnCerrarForm";
-            btnCerrarForm.Size = new Size(75, 23);
-            btnCerrarForm.TabIndex = 22;
-            btnCerrarForm.Text = "CERRAR";
-            btnCerrarForm.UseVisualStyleBackColor = true;
-            btnCerrarForm.Click += btnCerrarForm_Click;
-            // 
             // Ventas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
+            BackColor = Color.Silver;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(983, 643);
-            Controls.Add(btnCerrarForm);
             Controls.Add(btneliminar);
             Controls.Add(btnguardar);
             Controls.Add(btneditar);
@@ -262,10 +255,11 @@
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = SystemColors.ActiveCaptionText;
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Ventas";
             RightToLeft = RightToLeft.No;
             RightToLeftLayout = true;
-            Text = "Eliminar";
+            Text = "Menu - Ventas";
             Load += Form1_Load;
             datos.ResumeLayout(false);
             datos.PerformLayout();
@@ -290,6 +284,5 @@
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
-        private Button btnCerrarForm;
     }
 }

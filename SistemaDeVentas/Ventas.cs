@@ -43,11 +43,6 @@ namespace inventario
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
 
@@ -84,7 +79,6 @@ namespace inventario
             {
                 txtname.Text = "";
                 txtname.ForeColor = Color.Black;
-
             }
         }
 
@@ -94,7 +88,6 @@ namespace inventario
             {
                 txtname.Text = "producto";
                 txtname.ForeColor = Color.Gray;
-
             }
         }
 
@@ -102,10 +95,8 @@ namespace inventario
         {
             if (txtprecio.Text == "precio")
             {
-
                 txtprecio.Text = "";
                 txtprecio.ForeColor = Color.Black;
-
             }
         }
 
@@ -113,10 +104,8 @@ namespace inventario
         {
             if (txtprecio.Text == "")
             {
-
                 txtprecio.Text = "precio";
                 txtprecio.ForeColor = Color.Gray;
-
             }
         }
 
@@ -147,11 +136,6 @@ namespace inventario
             btnnuevo.Enabled = false;
             btnnuevo.BackColor = Color.Gray;
             btnnuevo.ForeColor = Color.White;
-
-
-
-
-
         }
 
         private void txtid_TextChanged(object sender, EventArgs e)
@@ -162,12 +146,9 @@ namespace inventario
 
         private void cleartxt()
         {
-            ;
             txtname.Text = "producto";
             txtprecio.Text = "precio";
             txtcant.Text = "cantidad";
-
-
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -192,15 +173,11 @@ namespace inventario
                 btnnuevo.Enabled = true;
                 btnnuevo.BackColor = Color.SteelBlue;
                 btnnuevo.ForeColor = Color.White;
-
-
             }
             else
             {
                 if (dvgdatos.Rows.Count > 0)
                 {
-
-
                     user user = new user();
 
                     user.Name = txtname.Text;
@@ -220,7 +197,6 @@ namespace inventario
                     btnnuevo.BackColor = Color.SteelBlue;
                     btnnuevo.ForeColor = Color.White;
                 }
-
             }
         }
 
@@ -240,7 +216,6 @@ namespace inventario
                 txtname.Text = dvgdatos.CurrentRow.Cells[1].Value.ToString();
                 txtprecio.Text = dvgdatos.CurrentRow.Cells[2].Value.ToString();
                 txtcant.Text = dvgdatos.CurrentRow.Cells[3].Value.ToString();
-
             }
         }
 
@@ -251,11 +226,6 @@ namespace inventario
                 int r = dvgdatos.SelectedRows[0].Index;
                 dvgdatos.Rows.RemoveAt(r);
             }
-        }
-
-        private void btnCerrarForm_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

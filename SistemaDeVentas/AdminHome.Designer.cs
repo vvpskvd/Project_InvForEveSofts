@@ -41,8 +41,14 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             panelChildForm = new Panel();
+            label10 = new Label();
+            label6 = new Label();
+            label4 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panelChildForm.SuspendLayout();
             SuspendLayout();
             // 
             // panelMenu
@@ -197,11 +203,66 @@
             // panelChildForm
             // 
             panelChildForm.BackColor = Color.Silver;
+            panelChildForm.Controls.Add(label10);
+            panelChildForm.Controls.Add(label6);
+            panelChildForm.Controls.Add(label4);
+            panelChildForm.Controls.Add(label2);
+            panelChildForm.Controls.Add(label3);
             panelChildForm.Dock = DockStyle.Fill;
             panelChildForm.Location = new Point(251, 0);
             panelChildForm.Name = "panelChildForm";
             panelChildForm.Size = new Size(983, 643);
             panelChildForm.TabIndex = 23;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(292, 373);
+            label10.Name = "label10";
+            label10.Size = new Size(410, 46);
+            label10.TabIndex = 40;
+            label10.Text = "InventoryForEveryone";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(245, 597);
+            label6.Name = "label6";
+            label6.Size = new Size(498, 25);
+            label6.TabIndex = 36;
+            label6.Text = "Seleccione cualquier elemento del menu para comenzar";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(317, 306);
+            label4.Name = "label4";
+            label4.Size = new Size(354, 46);
+            label4.TabIndex = 35;
+            label4.Text = "Sismeta de Ventas";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(464, 242);
+            label2.Name = "label2";
+            label2.Size = new Size(56, 46);
+            label2.TabIndex = 34;
+            label2.Text = "Al";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(268, 180);
+            label3.Name = "label3";
+            label3.Size = new Size(446, 46);
+            label3.TabIndex = 33;
+            label3.Text = "Bienvenido / Bienvenida";
             // 
             // AdminHome
             // 
@@ -225,6 +286,8 @@
             panelMenu.ResumeLayout(false);
             panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panelChildForm.ResumeLayout(false);
+            panelChildForm.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -241,5 +304,10 @@
         private Label label5;
         private Label UserOrAdmin;
         private Panel panelChildForm;
+        private Label label6;
+        private Label label4;
+        private Label label2;
+        private Label label3;
+        private Label label10;
     }
 }

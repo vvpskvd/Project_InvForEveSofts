@@ -28,18 +28,157 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AcercaDe));
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            btnContactAdmin = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LogoImage;
+            pictureBox1.Location = new Point(348, 72);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(252, 222);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(489, 334);
+            label1.Name = "label1";
+            label1.Size = new Size(214, 28);
+            label1.TabIndex = 1;
+            label1.Text = "Inventory For Everyone";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(251, 334);
+            label2.Name = "label2";
+            label2.Size = new Size(232, 28);
+            label2.TabIndex = 2;
+            label2.Text = "Nombre de la Aplicacion:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(461, 387);
+            label3.Name = "label3";
+            label3.Size = new Size(202, 28);
+            label3.TabIndex = 3;
+            label3.Text = "ProjectInvForEveSofts";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(251, 441);
+            label4.Name = "label4";
+            label4.Size = new Size(142, 28);
+            label4.TabIndex = 4;
+            label4.Text = "Administrador:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(251, 387);
+            label5.Name = "label5";
+            label5.Size = new Size(204, 28);
+            label5.TabIndex = 5;
+            label5.Text = "Nombre del Proyecto:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(399, 441);
+            label6.Name = "label6";
+            label6.Size = new Size(76, 28);
+            label6.TabIndex = 6;
+            label6.Text = "X-Softs";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(337, 498);
+            label7.Name = "label7";
+            label7.Size = new Size(49, 28);
+            label7.TabIndex = 7;
+            label7.Text = "1.01";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(251, 498);
+            label8.Name = "label8";
+            label8.Size = new Size(80, 28);
+            label8.TabIndex = 8;
+            label8.Text = "Version:";
+            // 
+            // btnContactAdmin
+            // 
+            btnContactAdmin.Cursor = Cursors.Hand;
+            btnContactAdmin.FlatStyle = FlatStyle.Popup;
+            btnContactAdmin.Location = new Point(489, 441);
+            btnContactAdmin.Name = "btnContactAdmin";
+            btnContactAdmin.Size = new Size(170, 28);
+            btnContactAdmin.TabIndex = 9;
+            btnContactAdmin.Text = "Contacto Del Administrador";
+            btnContactAdmin.UseVisualStyleBackColor = true;
+            btnContactAdmin.Click += btnContactAdmin_Click;
             // 
             // AcercaDe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Silver;
             ClientSize = new Size(983, 643);
+            Controls.Add(btnContactAdmin);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AcercaDe";
-            Text = "AcercaDe";
+            Text = "Menu - Acerca De";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Button btnContactAdmin;
     }
 }

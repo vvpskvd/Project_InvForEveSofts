@@ -1,5 +1,6 @@
 using Login;
 using Login.Config;
+using SistemaDeVentas;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 
@@ -13,21 +14,22 @@ namespace inventario
             InitializeComponent();
         }
 
+        //Variable para utilizar como puente entre el form de AdminHome y los demas forms del programa.
         private Form? activeForm = null;
         private void openChildForm(Form childForm)
         {
             if (activeForm != null)
             {
                 activeForm.Close();
-            }    
-             activeForm = childForm;
-             childForm.TopLevel = false;
-             childForm.FormBorderStyle = FormBorderStyle.None;
-             childForm.Dock = DockStyle.Fill;
-             panelChildForm.Controls.Add(childForm);
-             panelChildForm.Tag = childForm;
-             childForm.BringToFront();
-             childForm.Show();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
         }
 
@@ -59,7 +61,7 @@ namespace inventario
         //Boton Acerca De en AdminHome.
         private void btn_Acerca_De_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new AcercaDe());
         }
 
         //Boton de Salir para volver al formulario LoginHome y asi volver a ingresar como otro Admin o Usuario.
