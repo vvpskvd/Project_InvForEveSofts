@@ -85,6 +85,7 @@
             txtPass.PasswordChar = '*';
             txtPass.Size = new Size(281, 23);
             txtPass.TabIndex = 3;
+            txtPass.KeyDown += txtPass_KeyDown;
             // 
             // label3
             // 

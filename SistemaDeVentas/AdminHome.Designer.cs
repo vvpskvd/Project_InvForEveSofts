@@ -46,6 +46,7 @@
             btnguardar = new Button();
             btneliminar = new Button();
             panel1 = new Panel();
+            label5 = new Label();
             btn_Productos = new Button();
             btn_Acerca_De = new Button();
             btn_Empleados = new Button();
@@ -249,6 +250,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Gray;
+            panel1.Controls.Add(label5);
             panel1.Controls.Add(btn_Productos);
             panel1.Controls.Add(btn_Acerca_De);
             panel1.Controls.Add(btn_Empleados);
@@ -260,16 +262,26 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(241, 689);
+            panel1.Size = new Size(247, 689);
             panel1.TabIndex = 22;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(12, 157);
+            label5.Name = "label5";
+            label5.Size = new Size(225, 26);
+            label5.TabIndex = 30;
+            label5.Text = "InventoryForEveryone";
             // 
             // btn_Productos
             // 
             btn_Productos.FlatStyle = FlatStyle.Flat;
             btn_Productos.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Productos.Location = new Point(39, 434);
+            btn_Productos.Location = new Point(23, 435);
             btn_Productos.Name = "btn_Productos";
-            btn_Productos.Size = new Size(166, 46);
+            btn_Productos.Size = new Size(198, 46);
             btn_Productos.TabIndex = 29;
             btn_Productos.Text = "Productos";
             btn_Productos.UseVisualStyleBackColor = true;
@@ -278,9 +290,9 @@
             // 
             btn_Acerca_De.FlatStyle = FlatStyle.Flat;
             btn_Acerca_De.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Acerca_De.Location = new Point(34, 545);
+            btn_Acerca_De.Location = new Point(23, 545);
             btn_Acerca_De.Name = "btn_Acerca_De";
-            btn_Acerca_De.Size = new Size(166, 46);
+            btn_Acerca_De.Size = new Size(203, 46);
             btn_Acerca_De.TabIndex = 28;
             btn_Acerca_De.Text = "Acerca De";
             btn_Acerca_De.UseVisualStyleBackColor = true;
@@ -289,9 +301,9 @@
             // 
             btn_Empleados.FlatStyle = FlatStyle.Flat;
             btn_Empleados.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Empleados.Location = new Point(39, 371);
+            btn_Empleados.Location = new Point(23, 371);
             btn_Empleados.Name = "btn_Empleados";
-            btn_Empleados.Size = new Size(166, 46);
+            btn_Empleados.Size = new Size(198, 46);
             btn_Empleados.TabIndex = 27;
             btn_Empleados.Text = "Empleados";
             btn_Empleados.UseVisualStyleBackColor = true;
@@ -300,9 +312,9 @@
             // 
             btn_Ventas.FlatStyle = FlatStyle.Flat;
             btn_Ventas.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Ventas.Location = new Point(39, 242);
+            btn_Ventas.Location = new Point(23, 242);
             btn_Ventas.Name = "btn_Ventas";
-            btn_Ventas.Size = new Size(166, 46);
+            btn_Ventas.Size = new Size(198, 46);
             btn_Ventas.TabIndex = 26;
             btn_Ventas.Text = "Ventas";
             btn_Ventas.UseVisualStyleBackColor = true;
@@ -311,9 +323,9 @@
             // 
             btn_Compras.FlatStyle = FlatStyle.Flat;
             btn_Compras.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Compras.Location = new Point(39, 306);
+            btn_Compras.Location = new Point(23, 305);
             btn_Compras.Name = "btn_Compras";
-            btn_Compras.Size = new Size(166, 46);
+            btn_Compras.Size = new Size(198, 46);
             btn_Compras.TabIndex = 24;
             btn_Compras.Text = "Compras";
             btn_Compras.UseVisualStyleBackColor = true;
@@ -322,9 +334,9 @@
             // 
             btn_Salir.FlatStyle = FlatStyle.Flat;
             btn_Salir.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Salir.Location = new Point(34, 609);
+            btn_Salir.Location = new Point(23, 608);
             btn_Salir.Name = "btn_Salir";
-            btn_Salir.Size = new Size(166, 46);
+            btn_Salir.Size = new Size(203, 46);
             btn_Salir.TabIndex = 23;
             btn_Salir.Text = "Salir";
             btn_Salir.UseVisualStyleBackColor = true;
@@ -333,9 +345,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = SistemaDeVentas.Properties.Resources.LogoImage;
-            pictureBox1.Location = new Point(34, 12);
+            pictureBox1.Location = new Point(41, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(171, 160);
+            pictureBox1.Size = new Size(167, 136);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -344,7 +356,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(-13, 166);
+            label1.Location = new Point(-13, 183);
             label1.Name = "label1";
             label1.Size = new Size(287, 25);
             label1.TabIndex = 23;
@@ -409,5 +421,6 @@
         private Button btn_Ventas;
         private Button btn_Compras;
         private Button btn_Productos;
+        private Label label5;
     }
 }

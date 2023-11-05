@@ -15,11 +15,8 @@ namespace inventario
         int id = 1;
         int rows = 0;
 
-        public bool IsHidden { get; private set; }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
             txtname.ForeColor = Color.Gray;
             txtprecio.ForeColor = Color.Gray;
             txtcant.ForeColor = Color.Gray;
@@ -85,7 +82,6 @@ namespace inventario
             {
                 txtname.Text = "";
                 txtname.ForeColor = Color.Black;
-
             }
         }
 
@@ -95,7 +91,6 @@ namespace inventario
             {
                 txtname.Text = "producto";
                 txtname.ForeColor = Color.Gray;
-
             }
         }
 
@@ -103,10 +98,8 @@ namespace inventario
         {
             if (txtprecio.Text == "precio")
             {
-
                 txtprecio.Text = "";
                 txtprecio.ForeColor = Color.Black;
-
             }
         }
 
@@ -114,7 +107,6 @@ namespace inventario
         {
             if (txtprecio.Text == "")
             {
-
                 txtprecio.Text = "precio";
                 txtprecio.ForeColor = Color.Gray;
 
@@ -148,11 +140,6 @@ namespace inventario
             btnnuevo.Enabled = false;
             btnnuevo.BackColor = Color.Gray;
             btnnuevo.ForeColor = Color.White;
-
-
-
-
-
         }
 
         private void txtid_TextChanged(object sender, EventArgs e)
@@ -160,15 +147,11 @@ namespace inventario
 
         }
 
-
         private void cleartxt()
         {
-            ;
             txtname.Text = "producto";
             txtprecio.Text = "precio";
             txtcant.Text = "cantidad";
-
-
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -200,8 +183,6 @@ namespace inventario
             {
                 if (dvgdatos.Rows.Count > 0)
                 {
-
-
                     user user = new user();
 
                     user.Name = txtname.Text;
@@ -241,7 +222,6 @@ namespace inventario
                 txtname.Text = dvgdatos.CurrentRow.Cells[1].Value.ToString();
                 txtprecio.Text = dvgdatos.CurrentRow.Cells[2].Value.ToString();
                 txtcant.Text = dvgdatos.CurrentRow.Cells[3].Value.ToString();
-
             }
         }
 
@@ -258,7 +238,6 @@ namespace inventario
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             this.Hide();
-            this.IsHidden = true;
             LoginHome Loginhome = new LoginHome();
             Loginhome.Show();
         }

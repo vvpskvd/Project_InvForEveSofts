@@ -70,15 +70,12 @@ namespace Login
             }
         }
 
-        private void AdminHome_FormClosing(object sender, FormClosingEventArgs e)
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
         {
-            // Si el formulario de administrador no está abierto o está oculto, cierra la aplicación
-            var formAdmin = Application.OpenForms.OfType<AdminHome>().FirstOrDefault();
-            if (formAdmin == null || formAdmin.IsHidden)
+            if (e.KeyCode == Keys.Enter)
             {
-                Application.Exit();
+                btnIngresar.PerformClick();
             }
         }
-
     }
 }
