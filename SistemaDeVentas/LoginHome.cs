@@ -70,11 +70,13 @@ namespace Login
             }
         }
 
+        //Validacion para que si el usuario presiona "Enter" ingrese y valide datos.
         private void txtPass_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 btnIngresar.PerformClick();
+                e.SuppressKeyPress = true;
             }
         }
     }
