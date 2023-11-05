@@ -73,9 +73,9 @@
             labelForgetPassword3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelForgetPassword3.Location = new Point(8, 108);
             labelForgetPassword3.Name = "labelForgetPassword3";
-            labelForgetPassword3.Size = new Size(325, 21);
+            labelForgetPassword3.Size = new Size(356, 21);
             labelForgetPassword3.TabIndex = 4;
-            labelForgetPassword3.Text = "Contactar al administrador del sitio via Gmail:";
+            labelForgetPassword3.Text = "Contactar al administrador del sitio via WhatsApp:";
             // 
             // labelForgetPassword4
             // 
@@ -95,17 +95,17 @@
             labelForgetPassword5.Cursor = Cursors.IBeam;
             labelForgetPassword5.Font = new Font("Segoe UI", 12F, FontStyle.Underline, GraphicsUnit.Point);
             labelForgetPassword5.ForeColor = Color.Blue;
-            labelForgetPassword5.Location = new Point(339, 108);
+            labelForgetPassword5.Location = new Point(374, 108);
             labelForgetPassword5.Name = "labelForgetPassword5";
-            labelForgetPassword5.Size = new Size(214, 21);
+            labelForgetPassword5.Size = new Size(137, 21);
             labelForgetPassword5.TabIndex = 6;
-            labelForgetPassword5.Text = "vvpskvdbussines@gmail.com";
+            labelForgetPassword5.Text = "+57 314 3964316";
             // 
             // ForgetPassword
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(587, 171);
+            ClientSize = new Size(587, 166);
             Controls.Add(labelForgetPassword5);
             Controls.Add(labelForgetPassword4);
             Controls.Add(labelForgetPassword3);

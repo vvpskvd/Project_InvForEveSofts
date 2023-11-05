@@ -130,7 +130,7 @@
             btn_Empleados.Name = "btn_Empleados";
             btn_Empleados.Size = new Size(241, 46);
             btn_Empleados.TabIndex = 27;
-            btn_Empleados.Text = "Empleados";
+            btn_Empleados.Text = "Sistema";
             btn_Empleados.TextAlign = ContentAlignment.MiddleLeft;
             btn_Empleados.UseVisualStyleBackColor = true;
             btn_Empleados.Click += btn_Empleados_Click;

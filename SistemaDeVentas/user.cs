@@ -8,8 +8,7 @@ namespace inventario
 {
     public class user
     {
-
-        private string name;
+        private string? name;
         private int id;
         private int precio;
         private int cant;

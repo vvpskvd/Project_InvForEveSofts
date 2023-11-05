@@ -4,6 +4,9 @@
     <Compile Update="AcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ConfigurationHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ForgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>

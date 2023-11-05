@@ -46,3 +46,4 @@ E:\Documents\GitHub\Project_InvForEveSofts\SistemaDeVentas\obj\Debug\net6.0-wind
 E:\Documents\GitHub\Project_InvForEveSofts\SistemaDeVentas\obj\Debug\net6.0-windows\inventario.AdminHome.resources
 E:\Documents\GitHub\Project_InvForEveSofts\SistemaDeVentas\obj\Debug\net6.0-windows\SistemaDeVentas.AcercaDe.resources
 E:\Documents\GitHub\Project_InvForEveSofts\SistemaDeVentas\obj\Debug\net6.0-windows\inventario.Ventas.resources
+E:\Documents\GitHub\Project_InvForEveSofts\SistemaDeVentas\obj\Debug\net6.0-windows\SistemaDeVentas.ConfigurationHome.resources

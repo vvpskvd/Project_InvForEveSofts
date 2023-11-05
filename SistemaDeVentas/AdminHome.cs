@@ -49,7 +49,7 @@ namespace inventario
         //Boton Empleados en AdminHome.
         private void btn_Empleados_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new ConfigurationHome());
         }
 
         //Boton Productos en AdminHome.
