@@ -14,18 +14,12 @@ namespace inventario
         int id = 1;
         int rows = 0;
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Ventas_Load(object sender, EventArgs e)
         {
-
             txtname.ForeColor = Color.Gray;
             txtprecio.ForeColor = Color.Gray;
             txtcant.ForeColor = Color.Gray;
             btnguardar.Enabled = false;
-            btnguardar.BackColor = Color.Gray;
-            btnguardar.ForeColor = Color.White;
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -131,11 +125,7 @@ namespace inventario
         {
             edit = false;
             btnguardar.Enabled = true;
-            btnguardar.BackColor = Color.SteelBlue;
-            btnguardar.ForeColor = Color.White;
             btnnuevo.Enabled = false;
-            btnnuevo.BackColor = Color.Gray;
-            btnnuevo.ForeColor = Color.White;
         }
 
         private void txtid_TextChanged(object sender, EventArgs e)
@@ -168,11 +158,7 @@ namespace inventario
                 cleartxt();
                 id++;
                 btnguardar.Enabled = false;
-                btnguardar.BackColor = Color.Gray;
-                btnguardar.ForeColor = Color.White;
                 btnnuevo.Enabled = true;
-                btnnuevo.BackColor = Color.SteelBlue;
-                btnnuevo.ForeColor = Color.White;
             }
             else
             {
@@ -191,11 +177,7 @@ namespace inventario
                     cleartxt();
                     edit = false;
                     btnguardar.Enabled = false;
-                    btnguardar.BackColor = Color.Gray;
-                    btnguardar.ForeColor = Color.White;
                     btnnuevo.Enabled = true;
-                    btnnuevo.BackColor = Color.SteelBlue;
-                    btnnuevo.ForeColor = Color.White;
                 }
             }
         }
@@ -205,11 +187,7 @@ namespace inventario
             if (dvgdatos.SelectedRows.Count > 0)
             {
                 btnguardar.Enabled = true;
-                btnguardar.BackColor = Color.SteelBlue;
-                btnguardar.ForeColor = Color.White;
                 btnnuevo.Enabled = false;
-                btnnuevo.BackColor = Color.Gray;
-                btnnuevo.ForeColor = Color.White;
 
                 edit = true;
                 rows = dvgdatos.SelectedRows[0].Index;

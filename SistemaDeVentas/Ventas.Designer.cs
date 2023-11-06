@@ -75,7 +75,7 @@
             // 
             txtcant.Cursor = Cursors.IBeam;
             txtcant.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcant.Location = new Point(293, 140);
+            txtcant.Location = new Point(293, 103);
             txtcant.Name = "txtcant";
             txtcant.Size = new Size(238, 21);
             txtcant.TabIndex = 7;
@@ -102,7 +102,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(293, 120);
+            label2.Location = new Point(293, 83);
             label2.Name = "label2";
             label2.Size = new Size(64, 17);
             label2.TabIndex = 4;
@@ -147,6 +147,7 @@
             // 
             // dvgdatos
             // 
+            dvgdatos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dvgdatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvgdatos.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
             dvgdatos.Location = new Point(27, 374);
@@ -162,34 +163,31 @@
             Column1.HeaderText = "ID";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 250;
             // 
             // Column2
             // 
             Column2.HeaderText = "Nombre producto";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
-            Column2.Width = 300;
             // 
             // Column3
             // 
             Column3.HeaderText = "Precio";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 250;
             // 
             // Column4
             // 
             Column4.HeaderText = "Cantidad";
             Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
-            Column4.Width = 198;
             // 
             // btnnuevo
             // 
-            btnnuevo.BackColor = SystemColors.HotTrack;
+            btnnuevo.BackColor = Color.Silver;
             btnnuevo.Cursor = Cursors.Hand;
-            btnnuevo.ForeColor = SystemColors.ButtonHighlight;
+            btnnuevo.FlatStyle = FlatStyle.Popup;
+            btnnuevo.ForeColor = Color.Black;
             btnnuevo.Location = new Point(117, 267);
             btnnuevo.Name = "btnnuevo";
             btnnuevo.Size = new Size(170, 60);
@@ -200,9 +198,10 @@
             // 
             // btneditar
             // 
-            btneditar.BackColor = SystemColors.HotTrack;
+            btneditar.BackColor = Color.Silver;
             btneditar.Cursor = Cursors.Hand;
-            btneditar.ForeColor = SystemColors.ButtonHighlight;
+            btneditar.FlatStyle = FlatStyle.Popup;
+            btneditar.ForeColor = Color.Black;
             btneditar.Location = new Point(490, 267);
             btneditar.Name = "btneditar";
             btneditar.Size = new Size(170, 60);
@@ -213,11 +212,12 @@
             // 
             // btnguardar
             // 
-            btnguardar.BackColor = SystemColors.HotTrack;
+            btnguardar.BackColor = Color.Silver;
             btnguardar.Cursor = Cursors.Hand;
             btnguardar.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 192, 0);
             btnguardar.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 192);
-            btnguardar.ForeColor = SystemColors.ButtonHighlight;
+            btnguardar.FlatStyle = FlatStyle.Popup;
+            btnguardar.ForeColor = Color.Black;
             btnguardar.Location = new Point(304, 267);
             btnguardar.Name = "btnguardar";
             btnguardar.Size = new Size(170, 60);
@@ -228,9 +228,10 @@
             // 
             // btneliminar
             // 
-            btneliminar.BackColor = SystemColors.HotTrack;
+            btneliminar.BackColor = Color.Silver;
             btneliminar.Cursor = Cursors.Hand;
-            btneliminar.ForeColor = SystemColors.ButtonHighlight;
+            btneliminar.FlatStyle = FlatStyle.Popup;
+            btneliminar.ForeColor = Color.Black;
             btneliminar.Location = new Point(680, 267);
             btneliminar.Name = "btneliminar";
             btneliminar.Size = new Size(170, 60);
@@ -260,7 +261,7 @@
             RightToLeft = RightToLeft.No;
             RightToLeftLayout = true;
             Text = "Menu - Ventas";
-            Load += Form1_Load;
+            Load += Ventas_Load;
             datos.ResumeLayout(false);
             datos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dvgdatos).EndInit();

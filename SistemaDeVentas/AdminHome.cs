@@ -33,7 +33,6 @@ namespace inventario
 
         }
 
-
         //Boton Ventas en AdminHome.
         private void btn_Ventas_Click(object sender, EventArgs e)
         {
@@ -43,19 +42,13 @@ namespace inventario
         //Boton Compras en AdminHome.
         private void btn_Compras_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Compras());
         }
 
-        //Boton Empleados en AdminHome.
+        //Boton Sistema en AdminHome.
         private void btn_Empleados_Click(object sender, EventArgs e)
         {
             openChildForm(new ConfigurationHome());
-        }
-
-        //Boton Productos en AdminHome.
-        private void btn_Productos_Click(object sender, EventArgs e)
-        {
-
         }
 
         //Boton Acerca De en AdminHome.

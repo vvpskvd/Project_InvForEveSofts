@@ -32,7 +32,6 @@
             panelMenu = new Panel();
             UserOrAdmin = new Label();
             label5 = new Label();
-            btn_Productos = new Button();
             btn_Acerca_De = new Button();
             btn_Empleados = new Button();
             btn_Ventas = new Button();
@@ -56,7 +55,6 @@
             panelMenu.BackColor = Color.Gray;
             panelMenu.Controls.Add(UserOrAdmin);
             panelMenu.Controls.Add(label5);
-            panelMenu.Controls.Add(btn_Productos);
             panelMenu.Controls.Add(btn_Acerca_De);
             panelMenu.Controls.Add(btn_Empleados);
             panelMenu.Controls.Add(btn_Ventas);
@@ -90,21 +88,6 @@
             label5.TabIndex = 30;
             label5.Text = "Inicio sesion como:";
             // 
-            // btn_Productos
-            // 
-            btn_Productos.Cursor = Cursors.Hand;
-            btn_Productos.FlatAppearance.BorderSize = 0;
-            btn_Productos.FlatStyle = FlatStyle.Flat;
-            btn_Productos.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Productos.Location = new Point(3, 373);
-            btn_Productos.Name = "btn_Productos";
-            btn_Productos.Size = new Size(241, 46);
-            btn_Productos.TabIndex = 29;
-            btn_Productos.Text = "Productos";
-            btn_Productos.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Productos.UseVisualStyleBackColor = true;
-            btn_Productos.Click += btn_Productos_Click;
-            // 
             // btn_Acerca_De
             // 
             btn_Acerca_De.Cursor = Cursors.Hand;
@@ -126,7 +109,7 @@
             btn_Empleados.FlatAppearance.BorderSize = 0;
             btn_Empleados.FlatStyle = FlatStyle.Flat;
             btn_Empleados.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Empleados.Location = new Point(3, 306);
+            btn_Empleados.Location = new Point(3, 355);
             btn_Empleados.Name = "btn_Empleados";
             btn_Empleados.Size = new Size(241, 46);
             btn_Empleados.TabIndex = 27;
@@ -141,7 +124,7 @@
             btn_Ventas.FlatAppearance.BorderSize = 0;
             btn_Ventas.FlatStyle = FlatStyle.Flat;
             btn_Ventas.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Ventas.Location = new Point(3, 183);
+            btn_Ventas.Location = new Point(3, 230);
             btn_Ventas.Name = "btn_Ventas";
             btn_Ventas.Size = new Size(241, 46);
             btn_Ventas.TabIndex = 26;
@@ -156,7 +139,7 @@
             btn_Compras.FlatAppearance.BorderSize = 0;
             btn_Compras.FlatStyle = FlatStyle.Flat;
             btn_Compras.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_Compras.Location = new Point(3, 242);
+            btn_Compras.Location = new Point(3, 293);
             btn_Compras.Name = "btn_Compras";
             btn_Compras.Size = new Size(241, 46);
             btn_Compras.TabIndex = 24;
@@ -194,7 +177,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(-13, 131);
+            label1.Location = new Point(-13, 141);
             label1.Name = "label1";
             label1.Size = new Size(287, 25);
             label1.TabIndex = 23;
@@ -300,7 +283,6 @@
         private Button btn_Empleados;
         private Button btn_Ventas;
         private Button btn_Compras;
-        private Button btn_Productos;
         private Label label5;
         private Label UserOrAdmin;
         private Panel panelChildForm;
