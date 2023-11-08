@@ -8,6 +8,7 @@ namespace Login
         public LoginHome()
         {
             InitializeComponent();
+
         }
 
         //Boton para ingresar y validar datos de usuario.
@@ -78,6 +79,13 @@ namespace Login
                 btnIngresar.PerformClick();
                 e.SuppressKeyPress = true;
             }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            Application.Exit();
         }
     }
 }
