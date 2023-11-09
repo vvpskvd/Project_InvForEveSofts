@@ -47,20 +47,22 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.LogoImage;
-            pictureBox1.Location = new Point(348, 72);
+            pictureBox1.Location = new Point(223, 49);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(252, 222);
+            pictureBox1.Size = new Size(294, 296);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(573, 334);
+            label1.Location = new Point(471, 423);
             label1.Name = "label1";
-            label1.Size = new Size(288, 37);
+            label1.Size = new Size(364, 46);
             label1.TabIndex = 1;
             label1.Text = "Inventory For Everyone";
             // 
@@ -68,9 +70,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(251, 334);
+            label2.Location = new Point(70, 423);
             label2.Name = "label2";
-            label2.Size = new Size(316, 37);
+            label2.Size = new Size(395, 46);
             label2.TabIndex = 2;
             label2.Text = "Nombre de la Aplicacion:";
             // 
@@ -78,9 +80,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(533, 387);
+            label3.Location = new Point(471, 494);
             label3.Name = "label3";
-            label3.Size = new Size(271, 37);
+            label3.Size = new Size(344, 46);
             label3.TabIndex = 3;
             label3.Text = "ProjectInvForEveSofts";
             // 
@@ -88,9 +90,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(251, 441);
+            label4.Location = new Point(70, 573);
             label4.Name = "label4";
-            label4.Size = new Size(192, 37);
+            label4.Size = new Size(240, 46);
             label4.TabIndex = 4;
             label4.Text = "Administrador:";
             // 
@@ -98,9 +100,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(251, 387);
+            label5.Location = new Point(70, 494);
             label5.Name = "label5";
-            label5.Size = new Size(276, 37);
+            label5.Size = new Size(348, 46);
             label5.TabIndex = 5;
             label5.Text = "Nombre del Proyecto:";
             // 
@@ -108,9 +110,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(449, 441);
+            label6.Location = new Point(471, 573);
             label6.Name = "label6";
-            label6.Size = new Size(102, 37);
+            label6.Size = new Size(129, 46);
             label6.TabIndex = 6;
             label6.Text = "X-Softs";
             // 
@@ -118,9 +120,9 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(367, 497);
+            label7.Location = new Point(229, 652);
             label7.Name = "label7";
-            label7.Size = new Size(68, 37);
+            label7.Size = new Size(81, 46);
             label7.TabIndex = 7;
             label7.Text = "1.01";
             // 
@@ -128,9 +130,9 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(251, 497);
+            label8.Location = new Point(70, 652);
             label8.Name = "label8";
-            label8.Size = new Size(110, 37);
+            label8.Size = new Size(137, 46);
             label8.TabIndex = 8;
             label8.Text = "Version:";
             // 
@@ -138,9 +140,10 @@
             // 
             btnContactAdmin.Cursor = Cursors.Hand;
             btnContactAdmin.FlatStyle = FlatStyle.Popup;
-            btnContactAdmin.Location = new Point(557, 441);
+            btnContactAdmin.Location = new Point(606, 570);
+            btnContactAdmin.Margin = new Padding(3, 4, 3, 4);
             btnContactAdmin.Name = "btnContactAdmin";
-            btnContactAdmin.Size = new Size(179, 37);
+            btnContactAdmin.Size = new Size(205, 49);
             btnContactAdmin.TabIndex = 9;
             btnContactAdmin.Text = "Contacto Del Administrador";
             btnContactAdmin.UseVisualStyleBackColor = true;
@@ -150,9 +153,9 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(251, 547);
+            label9.Location = new Point(471, 652);
             label9.Name = "label9";
-            label9.Size = new Size(49, 37);
+            label9.Size = new Size(60, 46);
             label9.TabIndex = 10;
             label9.Text = "ID:";
             // 
@@ -160,18 +163,18 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(306, 547);
+            label10.Location = new Point(546, 652);
             label10.Name = "label10";
-            label10.Size = new Size(62, 37);
+            label10.Size = new Size(74, 46);
             label10.TabIndex = 11;
             label10.Text = "003";
             // 
             // AcercaDe
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
-            ClientSize = new Size(983, 643);
+            ClientSize = new Size(1123, 857);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(btnContactAdmin);
@@ -185,8 +188,10 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "AcercaDe";
             Text = "Menu - Acerca De";
+            Load += AcercaDe_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
