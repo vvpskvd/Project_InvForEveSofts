@@ -77,7 +77,7 @@
             txtcant.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtcant.Location = new Point(293, 103);
             txtcant.Name = "txtcant";
-            txtcant.Size = new Size(238, 21);
+            txtcant.Size = new Size(238, 24);
             txtcant.TabIndex = 7;
             txtcant.Text = "cantidad";
             txtcant.Enter += txtcant_Enter;
@@ -92,7 +92,7 @@
             txtprecio.Location = new Point(27, 140);
             txtprecio.Name = "txtprecio";
             txtprecio.RightToLeft = RightToLeft.No;
-            txtprecio.Size = new Size(238, 21);
+            txtprecio.Size = new Size(238, 24);
             txtprecio.TabIndex = 10;
             txtprecio.Text = "precio";
             txtprecio.Enter += txtprecio_Enter;
@@ -104,7 +104,7 @@
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(293, 83);
             label2.Name = "label2";
-            label2.Size = new Size(64, 17);
+            label2.Size = new Size(75, 20);
             label2.TabIndex = 4;
             label2.Text = "Cantidad";
             label2.UseWaitCursor = true;
@@ -116,7 +116,7 @@
             txtname.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtname.Location = new Point(27, 51);
             txtname.Name = "txtname";
-            txtname.Size = new Size(238, 21);
+            txtname.Size = new Size(238, 24);
             txtname.TabIndex = 8;
             txtname.Text = "producto";
             txtname.Enter += txtname_Enter;
@@ -128,7 +128,7 @@
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(27, 120);
             label4.Name = "label4";
-            label4.Size = new Size(48, 17);
+            label4.Size = new Size(57, 20);
             label4.TabIndex = 6;
             label4.Text = "Precio";
             label4.UseWaitCursor = true;
@@ -140,7 +140,7 @@
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(27, 31);
             label3.Name = "label3";
-            label3.Size = new Size(118, 17);
+            label3.Size = new Size(138, 20);
             label3.TabIndex = 5;
             label3.Text = "Nombre producto";
             label3.UseWaitCursor = true;
@@ -242,7 +242,7 @@
             // 
             // Ventas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             BackgroundImageLayout = ImageLayout.None;
@@ -257,6 +257,8 @@
             ForeColor = SystemColors.ActiveCaptionText;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Ventas";
             RightToLeft = RightToLeft.No;
             RightToLeftLayout = true;

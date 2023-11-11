@@ -1,4 +1,5 @@
-﻿using SistemaDeVentas;
+﻿using inventario;
+using SistemaDeVentas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,31 +35,27 @@ namespace Login
             childForm.Show();
 
         }
+
         private void btn_Ventas_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Ventas());
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnCompras_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_Empleados_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Ventas_Click_1(object sender, EventArgs e)
-        {
-
             openChildForm(new Compras());
-
         }
 
-        private void UserOrAdmin_Click(object sender, EventArgs e)
+        private void btn_Acerca_De_Click(object sender, EventArgs e)
         {
+            openChildForm(new AcercaDe());
+        }
 
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginHome Loginhome = new LoginHome();
+            Loginhome.Show();
         }
     }
 }

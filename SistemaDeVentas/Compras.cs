@@ -202,7 +202,7 @@ namespace SistemaDeVentas
         //Referencia al boton Eliminar. 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if(DvgData.SelectedRows.Count > 0)
+            if (DvgData.SelectedRows.Count > 0)
             {
                 int index = DvgData.SelectedRows[0].Index;
                 DvgData.Rows.RemoveAt(index);

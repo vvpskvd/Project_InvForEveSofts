@@ -61,9 +61,9 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(txtCodigo);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(148, 40);
+            groupBox1.Location = new Point(148, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(687, 238);
+            groupBox1.Size = new Size(687, 239);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos";
@@ -142,7 +142,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(689, 305);
+            btnEliminar.Location = new Point(689, 284);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(146, 53);
             btnEliminar.TabIndex = 1;
@@ -152,7 +152,7 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(506, 305);
+            btnEditar.Location = new Point(505, 284);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(146, 53);
             btnEditar.TabIndex = 2;
@@ -162,7 +162,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(329, 305);
+            btnGuardar.Location = new Point(326, 284);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(146, 53);
             btnGuardar.TabIndex = 3;
@@ -172,7 +172,7 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(148, 305);
+            btnNuevo.Location = new Point(148, 284);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(146, 53);
             btnNuevo.TabIndex = 4;
@@ -185,30 +185,35 @@
             DvgData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DvgData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DvgData.Columns.AddRange(new DataGridViewColumn[] { CodigoProducto, Precio, NombreProducto, Proveedor });
-            DvgData.Location = new Point(41, 384);
+            DvgData.Location = new Point(32, 364);
             DvgData.Name = "DvgData";
+            DvgData.RowHeadersWidth = 51;
             DvgData.RowTemplate.Height = 25;
-            DvgData.Size = new Size(905, 217);
+            DvgData.Size = new Size(905, 238);
             DvgData.TabIndex = 5;
             // 
             // CodigoProducto
             // 
             CodigoProducto.HeaderText = "Codigo del Producto";
+            CodigoProducto.MinimumWidth = 6;
             CodigoProducto.Name = "CodigoProducto";
             // 
             // Precio
             // 
             Precio.HeaderText = "Precio";
+            Precio.MinimumWidth = 6;
             Precio.Name = "Precio";
             // 
             // NombreProducto
             // 
             NombreProducto.HeaderText = "Nombre del Producto";
+            NombreProducto.MinimumWidth = 6;
             NombreProducto.Name = "NombreProducto";
             // 
             // Proveedor
             // 
             Proveedor.HeaderText = "Proveedor";
+            Proveedor.MinimumWidth = 6;
             Proveedor.Name = "Proveedor";
             // 
             // Compras
@@ -217,6 +222,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(983, 643);
+            ControlBox = false;
             Controls.Add(DvgData);
             Controls.Add(btnNuevo);
             Controls.Add(btnGuardar);
@@ -224,6 +230,7 @@
             Controls.Add(btnEliminar);
             Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Compras";
             Text = "Menu - Compras";
             Load += Compras_Load;
