@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,36 @@ namespace SistemaDeVentas
             labelAdminPassword.Text = Login.Config.SuperadminConfig.PasswordAdmin;
             labelUserUsername.Text = Login.Config.UserConfig.UsernameUser;
             labelUserPassword.Text = Login.Config.UserConfig.PasswordUser;
+        }
+
+        //Boton para modificar valores de inicio de sesion en instancia ADMIN.
+        ChangingUserAndPasswordAdmin? changingusernameorpasswordAdmin = null;
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (changingusernameorpasswordAdmin == null || changingusernameorpasswordAdmin.IsDisposed)
+            {
+                changingusernameorpasswordAdmin = new ChangingUserAndPasswordAdmin();
+                changingusernameorpasswordAdmin.Show();
+            }
+            else
+            {
+                changingusernameorpasswordAdmin.BringToFront();
+            }
+        }
+
+        //Boton para modificar valores de inicio de sesion en instancia USER.
+        ChangingUserAndPasswordUser? changingusernameorpasswordUser = null;
+        private void btnEditarUser_Click(object sender, EventArgs e)
+        {
+            if (changingusernameorpasswordUser == null || changingusernameorpasswordUser.IsDisposed)
+            {
+                changingusernameorpasswordUser = new ChangingUserAndPasswordUser();
+                changingusernameorpasswordUser.Show();
+            }
+            else
+            {
+                changingusernameorpasswordUser.BringToFront();
+            }
         }
     }
 }

@@ -68,7 +68,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(261, 302);
+            label10.Location = new Point(274, 358);
             label10.Name = "label10";
             label10.Size = new Size(410, 46);
             label10.TabIndex = 40;
@@ -88,7 +88,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(285, 246);
+            label4.Location = new Point(294, 298);
             label4.Name = "label4";
             label4.Size = new Size(354, 46);
             label4.TabIndex = 35;
@@ -98,7 +98,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(434, 191);
+            label2.Location = new Point(444, 238);
             label2.Name = "label2";
             label2.Size = new Size(56, 46);
             label2.TabIndex = 34;
@@ -108,7 +108,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(234, 130);
+            label3.Location = new Point(251, 178);
             label3.Name = "label3";
             label3.Size = new Size(446, 46);
             label3.TabIndex = 33;

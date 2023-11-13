@@ -61,7 +61,7 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(txtCodigo);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(148, 12);
+            groupBox1.Location = new Point(123, 23);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(687, 239);
             groupBox1.TabIndex = 0;
@@ -142,7 +142,8 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(689, 284);
+            btnEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEliminar.Location = new Point(664, 284);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(146, 53);
             btnEliminar.TabIndex = 1;
@@ -152,7 +153,8 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(505, 284);
+            btnEditar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEditar.Location = new Point(471, 284);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(146, 53);
             btnEditar.TabIndex = 2;
@@ -162,7 +164,8 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(326, 284);
+            btnGuardar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGuardar.Location = new Point(297, 284);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(146, 53);
             btnGuardar.TabIndex = 3;
@@ -172,7 +175,8 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(148, 284);
+            btnNuevo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnNuevo.Location = new Point(123, 284);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(146, 53);
             btnNuevo.TabIndex = 4;
