@@ -69,7 +69,6 @@
             datos.TabStop = false;
             datos.Tag = "";
             datos.Text = "Datos";
-            datos.Enter += groupBox1_Enter;
             // 
             // txtcant
             // 
@@ -77,7 +76,7 @@
             txtcant.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtcant.Location = new Point(293, 103);
             txtcant.Name = "txtcant";
-            txtcant.Size = new Size(238, 24);
+            txtcant.Size = new Size(238, 21);
             txtcant.TabIndex = 7;
             txtcant.Text = "cantidad";
             txtcant.Enter += txtcant_Enter;
@@ -92,7 +91,7 @@
             txtprecio.Location = new Point(27, 140);
             txtprecio.Name = "txtprecio";
             txtprecio.RightToLeft = RightToLeft.No;
-            txtprecio.Size = new Size(238, 24);
+            txtprecio.Size = new Size(238, 21);
             txtprecio.TabIndex = 10;
             txtprecio.Text = "precio";
             txtprecio.Enter += txtprecio_Enter;
@@ -104,11 +103,10 @@
             label2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(293, 83);
             label2.Name = "label2";
-            label2.Size = new Size(75, 20);
+            label2.Size = new Size(64, 17);
             label2.TabIndex = 4;
             label2.Text = "Cantidad";
             label2.UseWaitCursor = true;
-            label2.Click += label2_Click;
             // 
             // txtname
             // 
@@ -116,7 +114,7 @@
             txtname.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtname.Location = new Point(27, 51);
             txtname.Name = "txtname";
-            txtname.Size = new Size(238, 24);
+            txtname.Size = new Size(238, 21);
             txtname.TabIndex = 8;
             txtname.Text = "producto";
             txtname.Enter += txtname_Enter;
@@ -128,11 +126,10 @@
             label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(27, 120);
             label4.Name = "label4";
-            label4.Size = new Size(57, 20);
+            label4.Size = new Size(48, 17);
             label4.TabIndex = 6;
             label4.Text = "Precio";
             label4.UseWaitCursor = true;
-            label4.Click += label4_Click;
             // 
             // label3
             // 
@@ -140,7 +137,7 @@
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(27, 31);
             label3.Name = "label3";
-            label3.Size = new Size(138, 20);
+            label3.Size = new Size(118, 17);
             label3.TabIndex = 5;
             label3.Text = "Nombre producto";
             label3.UseWaitCursor = true;
@@ -156,7 +153,6 @@
             dvgdatos.RowTemplate.Height = 29;
             dvgdatos.Size = new Size(933, 244);
             dvgdatos.TabIndex = 17;
-            dvgdatos.CellContentClick += dataGridView2_CellContentClick;
             // 
             // Column1
             // 
@@ -186,7 +182,6 @@
             // 
             btnnuevo.BackColor = Color.Silver;
             btnnuevo.Cursor = Cursors.Hand;
-            btnnuevo.FlatStyle = FlatStyle.Popup;
             btnnuevo.ForeColor = Color.Black;
             btnnuevo.Location = new Point(117, 267);
             btnnuevo.Name = "btnnuevo";
@@ -200,7 +195,6 @@
             // 
             btneditar.BackColor = Color.Silver;
             btneditar.Cursor = Cursors.Hand;
-            btneditar.FlatStyle = FlatStyle.Popup;
             btneditar.ForeColor = Color.Black;
             btneditar.Location = new Point(490, 267);
             btneditar.Name = "btneditar";
@@ -216,7 +210,6 @@
             btnguardar.Cursor = Cursors.Hand;
             btnguardar.FlatAppearance.MouseDownBackColor = Color.FromArgb(192, 192, 0);
             btnguardar.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 192);
-            btnguardar.FlatStyle = FlatStyle.Popup;
             btnguardar.ForeColor = Color.Black;
             btnguardar.Location = new Point(304, 267);
             btnguardar.Name = "btnguardar";
@@ -230,7 +223,6 @@
             // 
             btneliminar.BackColor = Color.Silver;
             btneliminar.Cursor = Cursors.Hand;
-            btneliminar.FlatStyle = FlatStyle.Popup;
             btneliminar.ForeColor = Color.Black;
             btneliminar.Location = new Point(680, 267);
             btneliminar.Name = "btneliminar";
@@ -242,7 +234,7 @@
             // 
             // Ventas
             // 
-            AutoScaleDimensions = new SizeF(9F, 18F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             BackgroundImageLayout = ImageLayout.None;

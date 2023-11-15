@@ -27,10 +27,6 @@ namespace SistemaDeVentas
         //Referencia al cargar el form.
         private void Compras_Load(object sender, EventArgs e)
         {
-            txtName.ForeColor = Color.Gray;
-            txtCodigo.ForeColor = Color.Gray;
-            txtPrecio.ForeColor = Color.Gray;
-            txtProveedor.ForeColor = Color.Gray;
             btnGuardar.Enabled = false;
         }
 

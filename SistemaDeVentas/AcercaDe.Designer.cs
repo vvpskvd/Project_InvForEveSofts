@@ -53,7 +53,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
@@ -191,7 +190,6 @@
             MinimizeBox = false;
             Name = "AcercaDe";
             Text = "Menu - Acerca De";
-            Load += AcercaDe_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

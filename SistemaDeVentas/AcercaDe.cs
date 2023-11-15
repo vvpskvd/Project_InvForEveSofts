@@ -33,15 +33,5 @@ namespace SistemaDeVentas
                 forgetPassword.BringToFront();
             }
         }
-
-        private void AcercaDe_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

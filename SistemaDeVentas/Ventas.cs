@@ -22,51 +22,6 @@ namespace inventario
             btnguardar.Enabled = false;
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void textBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtid_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtid_Leave(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtname_Enter(object sender, EventArgs e)
         {
             if (txtname.Text == "producto")

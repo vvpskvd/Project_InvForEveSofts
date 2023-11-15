@@ -63,7 +63,7 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(123, 23);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(687, 239);
+            groupBox1.Size = new Size(717, 239);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos";
@@ -79,6 +79,7 @@
             // 
             // txtName
             // 
+            txtName.Cursor = Cursors.IBeam;
             txtName.Location = new Point(38, 146);
             txtName.Name = "txtName";
             txtName.Size = new Size(217, 23);
@@ -88,6 +89,7 @@
             // 
             // txtPrecio
             // 
+            txtPrecio.Cursor = Cursors.IBeam;
             txtPrecio.Location = new Point(373, 63);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(217, 23);
@@ -97,6 +99,7 @@
             // 
             // txtProveedor
             // 
+            txtProveedor.Cursor = Cursors.IBeam;
             txtProveedor.Location = new Point(373, 146);
             txtProveedor.Name = "txtProveedor";
             txtProveedor.Size = new Size(217, 23);
@@ -124,6 +127,7 @@
             // 
             // txtCodigo
             // 
+            txtCodigo.Cursor = Cursors.IBeam;
             txtCodigo.Location = new Point(38, 63);
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(217, 23);
@@ -142,8 +146,9 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.Cursor = Cursors.Hand;
             btnEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEliminar.Location = new Point(664, 284);
+            btnEliminar.Location = new Point(694, 284);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(146, 53);
             btnEliminar.TabIndex = 1;
@@ -153,8 +158,9 @@
             // 
             // btnEditar
             // 
+            btnEditar.Cursor = Cursors.Hand;
             btnEditar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEditar.Location = new Point(471, 284);
+            btnEditar.Location = new Point(496, 284);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(146, 53);
             btnEditar.TabIndex = 2;
@@ -164,8 +170,9 @@
             // 
             // btnGuardar
             // 
+            btnGuardar.Cursor = Cursors.Hand;
             btnGuardar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnGuardar.Location = new Point(297, 284);
+            btnGuardar.Location = new Point(316, 284);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(146, 53);
             btnGuardar.TabIndex = 3;
@@ -175,6 +182,7 @@
             // 
             // btnNuevo
             // 
+            btnNuevo.Cursor = Cursors.Hand;
             btnNuevo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnNuevo.Location = new Point(123, 284);
             btnNuevo.Name = "btnNuevo";
