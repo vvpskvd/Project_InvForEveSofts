@@ -1,5 +1,5 @@
 # Project_InvForEveSofts
-Nombre del Proyecto: Project_InvForEveSofts
+Nombre del Proyecto: Project_InventoryForEveryone
 
 # Titulo del Proyecto
 DISEÑO Y DESARROLLO DE UNA APLICACIÓN DE ESCRITORIO PARA MANEJO DE INVENTARIOS Y CONTABILIDAD
