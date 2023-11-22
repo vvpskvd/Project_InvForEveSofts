@@ -98,44 +98,61 @@ namespace inventario
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
+            //Validaciones si los datos son incorrectos.
             if (!edit)
             {
-                int x = dvgdatos.Rows.Add();
-                user user = new user();
-                user.Id = id;
-                user.Name = txtname.Text;
-                user.Precio = Convert.ToInt32(txtprecio.Text);
-                user.Cant = Convert.ToInt32(txtcant.Text);
-                dvgdatos.Rows[x].Cells[0].Value = user.Id;
-                dvgdatos.Rows[x].Cells[1].Value = user.Name;
-                dvgdatos.Rows[x].Cells[2].Value = user.Precio;
-                dvgdatos.Rows[x].Cells[3].Value = user.Cant;
-                cleartxt();
-                id++;
-                btnguardar.Enabled = false;
-                btnnuevo.Enabled = true;
-            }
-            else
-            {
-                if (dvgdatos.Rows.Count > 0)
+                if (string.IsNullOrWhiteSpace(txtname.Text) || string.IsNullOrWhiteSpace(txtprecio.Text) || string.IsNullOrWhiteSpace(txtcant.Text))
                 {
-                    user user = new user();
-
-                    user.Name = txtname.Text;
-                    user.Precio = Convert.ToInt32(txtprecio.Text);
-                    user.Cant = Convert.ToInt32(txtcant.Text);
-
-                    dvgdatos.Rows[rows].Cells[1].Value = user.Name;
-                    dvgdatos.Rows[rows].Cells[2].Value = user.Precio;
-                    dvgdatos.Rows[rows].Cells[3].Value = user.Cant;
-                    rows = 0;
-                    cleartxt();
-                    edit = false;
-                    btnguardar.Enabled = false;
-                    btnnuevo.Enabled = true;
+                    MessageBox.Show("Rellene todos los campos correctamente.");
+                }
+                else
+                {
+                    int precio;
+                    int cant;
+                    if (!int.TryParse(txtprecio.Text, out precio) || !int.TryParse(txtcant.Text, out cant))
+                    {
+                        MessageBox.Show("Ingrese numeros validos para el precio y/o la cantidad.");
+                    }
+                    else
+                    {
+                        int x = dvgdatos.Rows.Add();
+                        user user = new user();
+                        user.Id = id;
+                        user.Name = txtname.Text;
+                        user.Precio = precio;
+                        user.Cant = cant;
+                        dvgdatos.Rows[x].Cells[0].Value = user.Id;
+                        dvgdatos.Rows[x].Cells[1].Value = user.Name;
+                        dvgdatos.Rows[x].Cells[2].Value = user.Precio;
+                        dvgdatos.Rows[x].Cells[3].Value = user.Cant;
+                        cleartxt();
+                        id++;
+                        btnguardar.Enabled = false;
+                        btnnuevo.Enabled = true;
+                    }
                 }
             }
-        }
+            else
+                {
+                    if (dvgdatos.Rows.Count > 0)
+                    {
+                        user user = new user();
+
+                        user.Name = txtname.Text;
+                        user.Precio = Convert.ToInt32(txtprecio.Text);
+                        user.Cant = Convert.ToInt32(txtcant.Text);
+
+                        dvgdatos.Rows[rows].Cells[1].Value = user.Name;
+                        dvgdatos.Rows[rows].Cells[2].Value = user.Precio;
+                        dvgdatos.Rows[rows].Cells[3].Value = user.Cant;
+                        rows = 0;
+                        cleartxt();
+                        edit = false;
+                        btnguardar.Enabled = false;
+                        btnnuevo.Enabled = true;
+                    }
+                }
+            }
 
         private void btneditar_Click(object sender, EventArgs e)
         {
