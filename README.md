@@ -9,5 +9,7 @@ Problemática en el Registro y control de ventas, mejoras en el control financie
 
 # Objetivos Especificos del Proyecto.
 -Diseñar una Interfaz Amigable: Crear una interfaz de usuario intuitiva y fácil de navegar que permita a las microempresas gestionar sus inventarios sin necesidad de una capacitación extensa.
+
 -Implementar Seguimiento de Inventario: Desarrollar un sistema de seguimiento de inventario que permita monitorear en tiempo real los niveles de existencias, asegurando una gestión precisa y minimizando excesos o agotamientos de stock.
+
 -Generar Informes del mercado: Implementar herramientas de generación de informes que proporcionen a las microempresas información valiosa sobre las tendencias de ventas, productos populares y rotación de inventario, lo que ayuda en la toma de decisiones informadas y acertadas.
