@@ -131,6 +131,7 @@ namespace SistemaDeVentas
         //Referencia al Boton Guardar.
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            //Validaciones a los datos a guardar.
             if (!edit)
             {
                 if (string.IsNullOrWhiteSpace(txtCodigo.Text) || string.IsNullOrWhiteSpace(txtPrecio.Text) || string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtProveedor.Text))
@@ -143,7 +144,7 @@ namespace SistemaDeVentas
                     int cant;
                     if (!int.TryParse(txtCodigo.Text, out precio) || !int.TryParse(txtPrecio.Text, out cant))
                     {
-                        MessageBox.Show("Ingrese numeros validos para el precio y/o la cantidad.");
+                        MessageBox.Show("Ingrese datos validos en los campos a rellenar.");
                     }
                     else
                     {

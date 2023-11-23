@@ -105,7 +105,7 @@ namespace inventario
                     int cant;
                     if (!int.TryParse(txtprecio.Text, out precio) || !int.TryParse(txtcant.Text, out cant))
                     {
-                        MessageBox.Show("Ingrese numeros validos para el precio y/o la cantidad.");
+                        MessageBox.Show("Ingrese datos validos en los campos a rellenar.");
                     }
                     else
                     {
@@ -173,4 +173,3 @@ namespace inventario
         }
     }
 }
-
