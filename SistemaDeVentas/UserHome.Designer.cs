@@ -168,7 +168,7 @@
             // 
             UserOrAdmin.AutoSize = true;
             UserOrAdmin.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            UserOrAdmin.Location = new Point(97, 62);
+            UserOrAdmin.Location = new Point(97, 71);
             UserOrAdmin.Name = "UserOrAdmin";
             UserOrAdmin.Size = new Size(87, 26);
             UserOrAdmin.TabIndex = 31;
@@ -222,7 +222,7 @@
             pictureBox1.Location = new Point(10, 44);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(81, 60);
+            pictureBox1.Size = new Size(81, 72);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -231,7 +231,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(-11, 106);
+            label1.Location = new Point(-12, 118);
             label1.Name = "label1";
             label1.Size = new Size(287, 25);
             label1.TabIndex = 23;

@@ -83,12 +83,6 @@ namespace inventario
             btnnuevo.Enabled = false;
         }
 
-        private void txtid_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void cleartxt()
         {
             txtname.Text = "producto";

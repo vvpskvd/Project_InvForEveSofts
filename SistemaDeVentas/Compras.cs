@@ -15,7 +15,6 @@ namespace SistemaDeVentas
 {
     public partial class Compras : Form
     {
-        public bool True { get; private set; }
 
         public Compras()
         {
@@ -27,6 +26,11 @@ namespace SistemaDeVentas
         //Referencia al cargar el form.
         private void Compras_Load(object sender, EventArgs e)
         {
+            txtCodigo.ForeColor = Color.Gray;
+            txtPrecio.ForeColor = Color.Gray;
+            txtName.ForeColor = Color.Gray;
+            txtProveedor.ForeColor = Color.Gray;
+
             btnGuardar.Enabled = false;
         }
 
@@ -129,27 +133,43 @@ namespace SistemaDeVentas
         {
             if (!edit)
             {
-                int x = DvgData.Rows.Add();
-                userCompras user = new userCompras();
+                if (string.IsNullOrWhiteSpace(txtCodigo.Text) || string.IsNullOrWhiteSpace(txtPrecio.Text) || string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtProveedor.Text))
+                {
+                    MessageBox.Show("Rellene todos los campos correctamente.");
+                }
+                else
+                {
+                    int precio;
+                    int cant;
+                    if (!int.TryParse(txtCodigo.Text, out precio) || !int.TryParse(txtPrecio.Text, out cant))
+                    {
+                        MessageBox.Show("Ingrese numeros validos para el precio y/o la cantidad.");
+                    }
+                    else
+                    {
+                        int x = DvgData.Rows.Add();
+                        userCompras user = new userCompras();
 
 
-                user.Name = txtName.Text;
-                user.Proveedor = txtProveedor.Text;
-                user.Codigo = Convert.ToInt32(txtCodigo.Text);
-                user.Precio = Convert.ToInt32(txtPrecio.Text);
+                        user.Name = txtName.Text;
+                        user.Proveedor = txtProveedor.Text;
+                        user.Codigo = Convert.ToInt32(txtCodigo.Text);
+                        user.Precio = Convert.ToInt32(txtPrecio.Text);
 
-                DvgData.Rows[x].Cells[0].Value = user.Codigo;
-                DvgData.Rows[x].Cells[1].Value = user.Precio;
-                DvgData.Rows[x].Cells[2].Value = user.Name;
-                DvgData.Rows[x].Cells[3].Value = user.Proveedor;
+                        DvgData.Rows[x].Cells[0].Value = user.Codigo;
+                        DvgData.Rows[x].Cells[1].Value = user.Precio;
+                        DvgData.Rows[x].Cells[2].Value = user.Name;
+                        DvgData.Rows[x].Cells[3].Value = user.Proveedor;
 
-                ClearTextBoxs();
+                        ClearTextBoxs();
 
-                //Estilo del boton Guardar
-                btnGuardar.Enabled = false;
+                        //Estilo del boton Guardar
+                        btnGuardar.Enabled = false;
 
-                //Estilo del boton Nuevo
-                btnNuevo.Enabled = true;
+                        //Estilo del boton Nuevo
+                        btnNuevo.Enabled = true;
+                    }
+                }
             }
             else
             {
