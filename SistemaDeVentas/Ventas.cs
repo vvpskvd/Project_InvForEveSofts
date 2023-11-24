@@ -24,7 +24,7 @@ namespace inventario
 
         private void txtname_Enter(object sender, EventArgs e)
         {
-            if (txtname.Text == "producto")
+            if (txtname.Text == " ")
             {
                 txtname.Text = "";
                 txtname.ForeColor = Color.Black;
@@ -35,14 +35,14 @@ namespace inventario
         {
             if (txtname.Text == "")
             {
-                txtname.Text = "producto";
+                txtname.Text = " ";
                 txtname.ForeColor = Color.Gray;
             }
         }
 
         private void txtprecio_Enter(object sender, EventArgs e)
         {
-            if (txtprecio.Text == "precio")
+            if (txtprecio.Text == " ")
             {
                 txtprecio.Text = "";
                 txtprecio.ForeColor = Color.Black;
@@ -53,14 +53,14 @@ namespace inventario
         {
             if (txtprecio.Text == "")
             {
-                txtprecio.Text = "precio";
+                txtprecio.Text = " ";
                 txtprecio.ForeColor = Color.Gray;
             }
         }
 
         private void txtcant_Enter(object sender, EventArgs e)
         {
-            if (txtcant.Text == "cantidad")
+            if (txtcant.Text == " ")
             {
                 txtcant.Text = "";
                 txtcant.ForeColor = Color.Black;
@@ -71,7 +71,7 @@ namespace inventario
         {
             if (txtcant.Text == "")
             {
-                txtcant.Text = "cantidad";
+                txtcant.Text = " ";
                 txtcant.ForeColor = Color.Gray;
             }
         }
@@ -85,9 +85,9 @@ namespace inventario
 
         private void cleartxt()
         {
-            txtname.Text = "producto";
-            txtprecio.Text = "precio";
-            txtcant.Text = "cantidad";
+            txtname.Text = " ";
+            txtprecio.Text = " ";
+            txtcant.Text = " ";
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -127,26 +127,26 @@ namespace inventario
                 }
             }
             else
+            {
+                if (dvgdatos.Rows.Count > 0)
                 {
-                    if (dvgdatos.Rows.Count > 0)
-                    {
-                        user user = new user();
+                    user user = new user();
 
-                        user.Name = txtname.Text;
-                        user.Precio = Convert.ToInt32(txtprecio.Text);
-                        user.Cant = Convert.ToInt32(txtcant.Text);
+                    user.Name = txtname.Text;
+                    user.Precio = Convert.ToInt32(txtprecio.Text);
+                    user.Cant = Convert.ToInt32(txtcant.Text);
 
-                        dvgdatos.Rows[rows].Cells[1].Value = user.Name;
-                        dvgdatos.Rows[rows].Cells[2].Value = user.Precio;
-                        dvgdatos.Rows[rows].Cells[3].Value = user.Cant;
-                        rows = 0;
-                        cleartxt();
-                        edit = false;
-                        btnguardar.Enabled = false;
-                        btnnuevo.Enabled = true;
-                    }
+                    dvgdatos.Rows[rows].Cells[1].Value = user.Name;
+                    dvgdatos.Rows[rows].Cells[2].Value = user.Precio;
+                    dvgdatos.Rows[rows].Cells[3].Value = user.Cant;
+                    rows = 0;
+                    cleartxt();
+                    edit = false;
+                    btnguardar.Enabled = false;
+                    btnnuevo.Enabled = true;
                 }
             }
+        }
 
         private void btneditar_Click(object sender, EventArgs e)
         {

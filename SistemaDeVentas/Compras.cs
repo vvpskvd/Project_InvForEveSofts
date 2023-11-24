@@ -37,7 +37,7 @@ namespace SistemaDeVentas
         //Referencias a textboxs de Codigo.
         private void txtCodigo_Enter(object sender, EventArgs e)
         {
-            if (txtCodigo.Text == "Codigo del Producto")
+            if (txtCodigo.Text == " ")
             {
                 txtCodigo.Text = "";
                 txtCodigo.ForeColor = Color.Black;
@@ -47,7 +47,7 @@ namespace SistemaDeVentas
         {
             if (txtCodigo.Text == "")
             {
-                txtCodigo.Text = "Codigo del Producto";
+                txtCodigo.Text = " ";
                 txtCodigo.ForeColor = Color.Gray;
             }
         }
@@ -56,7 +56,7 @@ namespace SistemaDeVentas
         //Referencias a textboxs de Precio.
         private void txtPrecio_Enter(object sender, EventArgs e)
         {
-            if (txtPrecio.Text == "Precio")
+            if (txtPrecio.Text == " ")
             {
                 txtPrecio.Text = "";
                 txtPrecio.ForeColor = Color.Black;
@@ -66,7 +66,7 @@ namespace SistemaDeVentas
         {
             if (txtPrecio.Text == "")
             {
-                txtPrecio.Text = "Precio";
+                txtPrecio.Text = " ";
                 txtPrecio.ForeColor = Color.Gray;
             }
         }
@@ -75,7 +75,7 @@ namespace SistemaDeVentas
         //Referencias a textboxs de Nombre del Producto.
         private void txtName_Enter(object sender, EventArgs e)
         {
-            if (txtName.Text == "Nombre del Producto")
+            if (txtName.Text == " ")
             {
                 txtName.Text = "";
                 txtName.ForeColor = Color.Black;
@@ -85,7 +85,7 @@ namespace SistemaDeVentas
         {
             if (txtName.Text == "")
             {
-                txtName.Text = "Nombre del Producto";
+                txtName.Text = " ";
                 txtName.ForeColor = Color.Gray;
             }
         }
@@ -94,7 +94,7 @@ namespace SistemaDeVentas
         //Rerefencias a textboxs de Proveedor.
         private void txtProveedor_Enter(object sender, EventArgs e)
         {
-            if (txtProveedor.Text == "Proveedor")
+            if (txtProveedor.Text == " ")
             {
                 txtProveedor.Text = "";
                 txtProveedor.ForeColor = Color.Black;
@@ -104,7 +104,7 @@ namespace SistemaDeVentas
         {
             if (txtProveedor.Text == "")
             {
-                txtProveedor.Text = "Proveedor";
+                txtProveedor.Text = " ";
                 txtProveedor.ForeColor = Color.Gray;
             }
         }
@@ -121,10 +121,10 @@ namespace SistemaDeVentas
         //Funcion para limpiar los TextBoxs.
         private void ClearTextBoxs()
         {
-            txtCodigo.Text = "Codigo del Producto";
-            txtPrecio.Text = "Precio";
-            txtName.Text = "Nombre del Producto";
-            txtProveedor.Text = "Proveedor";
+            txtCodigo.Text = " ";
+            txtPrecio.Text = " ";
+            txtName.Text = " ";
+            txtProveedor.Text = " ";
         }
 
 

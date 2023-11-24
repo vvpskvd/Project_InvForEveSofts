@@ -78,7 +78,6 @@
             txtcant.Name = "txtcant";
             txtcant.Size = new Size(238, 21);
             txtcant.TabIndex = 7;
-            txtcant.Text = "cantidad";
             txtcant.Enter += txtcant_Enter;
             txtcant.Leave += txtcant_Leave;
             // 
@@ -93,7 +92,6 @@
             txtprecio.RightToLeft = RightToLeft.No;
             txtprecio.Size = new Size(238, 21);
             txtprecio.TabIndex = 10;
-            txtprecio.Text = "precio";
             txtprecio.Enter += txtprecio_Enter;
             txtprecio.Leave += txtprecio_Leave;
             // 
@@ -116,7 +114,6 @@
             txtname.Name = "txtname";
             txtname.Size = new Size(238, 21);
             txtname.TabIndex = 8;
-            txtname.Text = "producto";
             txtname.Enter += txtname_Enter;
             txtname.Leave += txtname_Leave;
             // 
