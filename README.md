@@ -1,9 +1,13 @@
-<span>https://raw.githubusercontent.com/vvpskvd/Project_InvForEveSofts/SistemaDeVentas/Resources/LogoImage.png</span>
+<p align="center">
+    <a href="https://github.com/vvpskvd/Project_InvForEveSofts/blob/main/SistemaDeVentas/Resources">
+        <img src="https://github.com/vvpskvd/Project_InvForEveSofts/blob/main/SistemaDeVentas/Resources/LogoImage.png" />
+    </a>
+</p>
 
-# Project_InvForEveSofts
-Nombre del Proyecto: Project_InventoryForEveryone
+<h1 align="center"> Project_InvForEveSofts </h1>
 
 # Titulo del Proyecto
+Nombre del Proyecto: Project_InventoryForEveryone
 DISEÑO Y DESARROLLO DE UNA APLICACIÓN DE ESCRITORIO PARA MANEJO DE INVENTARIOS Y CONTABILIDAD
 
 # Descripcion del Problema.
