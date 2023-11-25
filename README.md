@@ -1,3 +1,5 @@
+<span>https://raw.githubusercontent.com/vvpskvd/Project_InvForEveSofts/SistemaDeVentas/Resources/LogoImage.png</span>
+
 # Project_InvForEveSofts
 Nombre del Proyecto: Project_InventoryForEveryone
 
